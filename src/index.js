@@ -1,6 +1,6 @@
 import "./styles.css";
 
-var currentsymbol = "x";
+/*var currentsymbol = "x";
 var winner = null;
 var progressTracker;
 
@@ -135,4 +135,4 @@ function startTimer() {
 
 function stopTimer() {
   clearInterval(progressTracker);
-}
+}*/

@@ -1,62 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+	<link rel="stylesheet" href="src/styles.css">
+
+	<!-- Compiled and minified JavaScript -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<meta charset="UTF-8" />
 </head>
 <body>
 	<div id="app">
-		<h1>Tic tac toe</h1>
-		<br>
-		<p id="message"></p>
-		<br>
-		<div>
-			<div id="progressBar" align="center"></div>
-			<p id="count" align="center"></p<
-		</div>	
-		<br>
-			<table id="board" align="center">
-				<tbody>
-					<tr>
-						<td class="cell" id="11"></td>
-						<td class="cell" id="12"></td>
-						<td class="cell" id="13"></td>
-						<td class="cell" id="14"></td>
-						<td class="cell" id="15"></td>
-					</tr>
-					<tr>
-						<td class="cell" id="21"></td>
-						<td class="cell" id="22"></td>
-						<td class="cell" id="23"></td>
-						<td class="cell" id="24"></td>
-						<td class="cell" id="25"></td>
-					</tr>
-					<tr>
-						<td class="cell" id="31"></td>
-						<td class="cell" id="32"></td>
-						<td class="cell" id="33"></td>
-						<td class="cell" id="34"></td>
-						<td class="cell" id="35"></td>
-					</tr>
-					<tr>
-						<td class="cell" id="41"></td>
-						<td class="cell" id="42"></td>
-						<td class="cell" id="43"></td>
-						<td class="cell" id="44"></td>
-						<td class="cell" id="45"></td>
-					</tr>
-					<tr>
-						<td class="cell" id="51"></td>
-						<td class="cell" id="52"></td>
-						<td class="cell" id="53"></td>
-						<td class="cell" id="54"></td>
-						<td class="cell" id="55"></td>
-					</tr>
-				</tbody>
-			</table>
-			<br>
-			<div align="center">
-				<button type="button" id="newgame">New game</button>
+		<div class="divider">
+			<div class="section">
+				<h1>Tic tac toe</h1>
+				<br>
+				<p id="message"></p>
+				<br>
 			</div>
+		</div>
+		<div class="divider">
+			<div class="section">
+				<div id="progressBar" align="center"></div>
+				<p id="count" align="center"></p>
+				<br>
+			</div>
+		</div>	
+		<div class="divider">
+			<div class="section">
+			</div>
+		</div>
+		<div class="divider">
+			<div class="section">
+				<div align="center">
+					<button type="button" id="newgame">New game</button>
+				</div>
+			</div>
+		</div>		
 	</div>
 	<script src="./src/index.js"></script>
 </body>

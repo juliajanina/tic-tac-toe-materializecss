@@ -2,7 +2,7 @@ body {
   font-family: sans-serif;
 }
 
-#board td {
+/*#board td {
   border: 1px solid black;
   height: 60px;
   width: 60px;
@@ -19,7 +19,7 @@ body {
 #board {
   border: 1px solid black;
   border-collapse: collapse;
-}
+}*/
 
 h1 {
   text-align: center;
@@ -35,13 +35,13 @@ button {
   height: 30px;
 }
 
-.colorX {
+/*.colorX {
   background-color: rgb(124, 252, 0);
 }
 
 .colorO {
   background-color: rgb(250, 128, 114);
-}
+}*/
 
 div#progressBar {
   height: 20px;
