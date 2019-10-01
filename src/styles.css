@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+}
+
+#board td {
+  border: 1px solid black;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30px;
+  font-family: Helvetica;
+}
+
+#board td:hover {
+  background-color: rgb(216, 216, 216);
+}
+
+#board {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+h1 {
+  text-align: center;
+}
+
+p#message {
+  text-align: center;
+  font-size: 14pt;
+}
+
+button {
+  background-color: rgb(5, 201, 87);
+  height: 30px;
+}
+
+.colorX {
+  background-color: rgb(124, 252, 0);
+}
+
+.colorO {
+  background-color: rgb(250, 128, 114);
+}
+
+div#progressBar {
+  height: 20px;
+  border-radius: 5px;
+  width: 0;
+  background-color: rgb(113, 250, 250);
+}
