@@ -9,33 +9,62 @@
 	<meta charset="UTF-8" />
 </head>
 <body>
-	<div id="app">
-		<div class="divider">
+	<div id="app" class="container">
 			<div class="section">
 				<h1>Tic tac toe</h1>
 				<br>
 				<p id="message"></p>
-				<br>
 			</div>
-		</div>
-		<div class="divider">
 			<div class="section">
-				<div id="progressBar" align="center"></div>
+				<div class="progress" id="progressBar">
+      		<div class="determinate"></div>
+  			</div>
 				<p id="count" align="center"></p>
 				<br>
 			</div>
-		</div>	
-		<div class="divider">
-			<div class="section">
-			</div>
-		</div>
-		<div class="divider">
+			<div class="section" id="board">	
+				<div class="row">
+					<div class="col s2 offset-s1" id="11"></div>
+					<div class="col s2" id="12"></div>
+					<div class="col s2" id="13"></div>
+					<div class="col s2" id="14"></div>
+					<div class="col s2" id="15"></div>
+				</div>
+				<div class="row">
+					<div class="col s2 offset-s1" id="21"></div>
+					<div class="col s2" id="22"></div>
+					<div class="col s2" id="23"></div>
+					<div class="col s2" id="24"></div>
+					<div class="col s2" id="25"></div>
+				</div>
+				<div class="row">
+					<div class="col s2 offset-s1" id="31"></div>
+					<div class="col s2" id="32"></div>
+					<div class="col s2" id="33"></div>
+					<div class="col s2" id="34"></div>
+					<div class="col s2" id="35"></div>
+				</div>
+				<div class="row">
+					<div class="col s2 offset-s1" id="41"></div>
+					<div class="col s2" id="42"></div>
+					<div class="col s2" id="43"></div>
+					<div class="col s2" id="44"></div>
+					<div class="col s2" id="45"></div>
+				</div>
+				<div class="row">
+					<div class="col s2 offset-s1" id="51"></div>
+					<div class="col s2" id="52"></div>
+					<div class="col s2" id="53"></div>
+					<div class="col s2" id="54"></div>
+					<div class="col s2" id="55"></div>
+				</div>
+			</div>	
 			<div class="section">
 				<div align="center">
+					<br>
 					<button type="button" id="newgame">New game</button>
 				</div>
-			</div>
-		</div>		
+			</div>		
 	</div>
 	<script src="./src/index.js"></script>
 </body>

@@ -1,6 +1,6 @@
 import "./styles.css";
 
-/*var currentsymbol = "x";
+var currentsymbol = "x";
 var winner = null;
 var progressTracker;
 
@@ -10,7 +10,7 @@ document.getElementById("board").addEventListener("click", playMove);
 document.getElementById("newgame").addEventListener("click", startGame);
 
 function startGame() {
-  var x = document.getElementsByClassName("cell");
+  var x = document.getElementsByClassName("col");
   for (var i = 0; i < x.length; i++) {
     x[i].innerHTML = "";
   }
@@ -30,16 +30,14 @@ function playMove(event) {
   if (winner != null) {
     setMessage(currentsymbol + " already won the game!");
   } else if (document.getElementById(event.target.id).innerHTML === "") {
-    document.getElementById(event.target.id).innerHTML = currentsymbol;
+    document.getElementById(event.target.id).innerText = currentsymbol;
 
     if (currentsymbol === "x") {
-      const att = document.createAttribute("class");
-      att.value = "colorX";
-      document.getElementById(event.target.id).setAttributeNode(att);
+      const att = "colorX";
+      document.getElementById(event.target.id).classList.add(att);
     } else if (currentsymbol === "o") {
-      const att = document.createAttribute("class");
-      att.value = "colorO";
-      document.getElementById(event.target.id).setAttributeNode(att);
+      const att = "colorO";
+      document.getElementById(event.target.id).classList.add(att);
     }
 
     switchTurn();
@@ -104,7 +102,7 @@ function getCellValue(id) {
 }
 
 function checkForTie() {
-  var x = document.getElementsByClassName("cell");
+  var x = document.getElementsByClassName("col");
   for (var i = 0; i < x.length; i++) {
     if (x[i].innerHTML === "") {
       return false;
@@ -135,4 +133,4 @@ function startTimer() {
 
 function stopTimer() {
   clearInterval(progressTracker);
-}*/
+}
